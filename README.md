@@ -5,4 +5,4 @@
 
 <hr/>
 
-## Create by <a href="https://instagram.com/gabrielbarrozs" target="_blank">Gabriel ⭐<a/>
+## Create by <a target="_blank" href="https://instagram.com/gabrielbarrozs">Gabriel ⭐<a/>
