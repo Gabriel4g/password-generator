@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Password Generator</h1>
+
+    <main id="container">
+        <div id="container-range">
+            <p id="length-password">0</p>
+
+            <input type="range" name="" id="slider" max="25">
+            <p id="max">25</p>
+        </div>
+
+        <p id="settings">Settings</p>
+
+        <div id="container-settings">
+            <div class="cards-settings">
+                <p>All UpperCase</p>
+                <input type="checkbox" id="uppercase" onclick="checkAndUncheck(this)">
+            </div>
+
+            <div class="cards-settings">
+                <p>All LowerCase</p>
+                <input type="checkbox" id="lowercase" onclick="checkAndUncheck(this)">
+            </div>
+
+            <div class="cards-settings">
+                <p>Add Symbols</p>
+                <input type="checkbox" id="symbols" onclick="checkAndUncheck(this)">
+            </div>
+
+            <div class="cards-settings">
+                <p>Add Caracteres specials</p>
+                <input type="checkbox" id="caracteres-specials" onclick="checkAndUncheck(this)">
+            </div>
+        </div>
+
+        <div id="container-generator">
+            <button id="btn-generator" onclick="generatorPassword()">
+                Generate Password
+            </button>
+
+            <div id="container-password">
+                <p id="password"></p>
+
+                <button id="copy-password" onclick="copyPassword()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44"
+                        height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="8" y="8" width="12" height="12" rx="2" />
+                        <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/main.js">
+    </script>
+</body>
+
+</html>

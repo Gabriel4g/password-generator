@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --cinza: #31343B
+}
+
+body {
+    height: 100vh;
+    background: #20242B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+main {
+    width: 95%;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container-range {
+    background: var(--cinza);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+#length-password,
+#max {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#slider {
+    -webkit-appearance: none;
+    height: 3px;
+    width: 80%;
+    border-radius: 10px;
+    background: #72e26e;
+    accent-color: #fff;
+}
+
+main #settings {
+    color: #888A8D;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+#container-settings {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+#container-settings .cards-settings {
+    background: var(--cinza);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.cards-settings input[type="checkbox"] {
+    accent-color: #22b81d;
+}
+
+.cards-settings p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#container-generator {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#container-generator #btn-generator {
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(
+        #37c032,
+        rgb(89, 207, 188)
+    );
+    color: #fff;
+    cursor: pointer;
+}
+
+#container-generator #container-password {
+    max-width: 100%;
+    background: var(--cinza);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#container-password p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+#container-password #copy-password {
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 100%;
+}
